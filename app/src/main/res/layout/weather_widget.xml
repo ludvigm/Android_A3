@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/widget_shape"
+    android:orientation="vertical"
+    android:id="@+id/weather_widget_layout"
+    android:weightSum="3"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:padding="10dp"
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:id="@+id/weather_widget_city_text"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/brightwhite"
+            />
+        <Button
+            android:id="@+id/button_1"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="Update data"
+            android:textAllCaps="false"
+            android:textSize="14sp"
+            android:layout_gravity="center"
+            android:background="@drawable/top_shape"
+            >
+        </Button>
+    </LinearLayout>
+    <ListView
+        android:id="@+id/widget_listview"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:id="@+id/list_empty"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:text="Empty! (I'm either fetching data or you have no connection)"
+        />
+</LinearLayout>

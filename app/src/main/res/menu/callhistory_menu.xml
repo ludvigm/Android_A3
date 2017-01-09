@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:title="Update" app:showAsAction="ifRoom" android:id="@+id/callhistory_update_item"/>
+    <item android:title="Clear file" app:showAsAction="never" android:id="@+id/callhistory_delete_file"/>
+</menu>

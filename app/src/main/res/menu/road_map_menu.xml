@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:title="Show Route.." app:showAsAction="ifRoom|withText" android:id="@+id/show_route_option">
+        <menu>
+            <item android:title="None" android:id="@+id/roadmap_no_route_option"/>
+            <item android:title="Stockholm" android:id="@+id/roadmap_stockholm_route_option"/>
+            <item android:title="Copenhagen" android:id="@+id/roadmap_copenhagen_route_option"/>
+            <item android:title="Odessa" android:id="@+id/roadmap_odessa_route_option"/>
+        </menu>
+    </item>
+</menu>
